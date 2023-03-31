@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,45 @@
     <link rel="stylesheet" href="style.css">
     <title>Dice Roller</title>
 </head>
-<body>
-    <h1>Hello World</h1>
 
+<body>
+    <div class="dice-container">
+        <div id="one" class="dice-face">
+            <div class="crcl center"></div>
+        </div>
+        <div id="two" class="dice-face">
+            <div class="crcl corner-tl"></div>
+            <div class="crcl corner-br"></div>
+        </div>
+        <div id="three" class="dice-face">
+            <div class="crcl corner-tl"></div>
+            <div class="crcl corner-br"></div>
+            <div class="crcl center"></div>
+        </div>
+        <div id="four" class="dice-face">
+            <div class="crcl corner-tl"></div>
+            <div class="crcl corner-bl"></div>
+            <div class="crcl corner-tr"></div>
+            <div class="crcl corner-br"></div>
+        </div>
+        <div id="five" class="dice-face">
+            <div class="crcl corner-tl"></div>
+            <div class="crcl corner-bl"></div>
+            <div class="crcl corner-tr"></div>
+            <div class="crcl corner-br"></div>
+            <div class="crcl center"></div>
+        </div>
+        <div id="six" class="dice-face">
+            <div class="crcl corner-tl"></div>
+            <div class="crcl corner-bl"></div>
+            <div class="crcl corner-tr"></div>
+            <div class="crcl corner-br"></div>
+            <div class="crcl center-r"></div>
+            <div class="crcl center-l"></div>
+        </div>
+
+    </div>
+    <button class="generate-btn">Roll Dice</button>
     <!-- Javascript -->
     <script src="app.js"></script>
 </body>

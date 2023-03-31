@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Raleway', sans-serif;
+}
+body{
+    background-color: #1C1C1C;
+}
+.dice-container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.dice-face{
+    height: 250px;
+    width: 250px;
+    background-color: #DADDD8;
+    border-radius: 20px;
+    position: relative;
+}
+.generate-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #DADDD8;
+    color: #1C1C1C;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 200px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.dice-face{
+    display: none;
+}
+.corner-tl{
+    top: 10px;
+    left: 10px;
+}
+.corner-tr{
+    top: 10px;
+    right: 10px;
+}
+.corner-br{
+    bottom: 10px;
+    right: 10px;
+}
+.corner-bl{
+    bottom: 10px;
+    left: 10px;
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-r{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.center-l{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+.crcl{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
 }
