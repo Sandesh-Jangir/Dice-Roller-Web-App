@@ -5,3 +5,16 @@ const generateDiceNumber = ()=>{
 }
 
 console.log(generateDiceNumber()); // Printing the result
+
+// JS Object used to get track of DOM id's with the help of generated numbers
+const domIdDict = {
+    1 : "one",
+    2 : "two",
+    3 : "three",
+    4 : "four",
+    5 : "five"
+}
+
+// Displaying the Generated Dice.
+let generatedNumber = generateDiceNumber();
+document.getElementById(domIdDict[generatedNumber]).style.display = "block";
