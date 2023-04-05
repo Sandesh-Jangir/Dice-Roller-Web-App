@@ -77,3 +77,8 @@ body{
     background-color: black;
     position: absolute;
 }
+
+#initial-message{
+    color:#DADDD8;
+    font-weight: bolder;
+}
