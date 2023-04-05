@@ -4,8 +4,6 @@ const generateDiceNumber = ()=>{
     return number;
 }
 
-console.log(generateDiceNumber()); // Printing the result
-
 // JS Object used to get track of DOM id's with the help of generated numbers
 const domIdDict = {
     1 : "one",
@@ -16,6 +14,13 @@ const domIdDict = {
     6 : "six"
 }
 
-// Displaying the Generated Dice.
-let generatedNumber = generateDiceNumber();
-document.getElementById(domIdDict[generatedNumber]).style.display = "block";
+// Handling the generate button click.
+const handleGenerateAction = ()=>{
+    // Setting all other dice faces to display = "none";
+    for (const id in domIdDict) {
+        document.getElementById(domIdDict[id]).style.display = "";
+    }
+    // Displaying the Generated Dice.
+    let generatedNumber = generateDiceNumber();
+    document.getElementById(domIdDict[generatedNumber]).style.display = "block";
+}
